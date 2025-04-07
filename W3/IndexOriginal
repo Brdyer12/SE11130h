@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 Lab | Main Page</title>
+    <style>
+        html, body{
+        display: flex;
+        justify-content: center;
+        background-color: darkgreen;
+        }
+        #main{
+        width: 1000px;
+        padding: 10px;
+        border: 1px solid black;
+        }
+        #header{
+            height: 130px;
+            background-color: yellow;
+        }
+        h1{
+            line-height: 130px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+#nav{
+height: 100px;
+background-color: lightyellow;
+}
+#content{
+    height: 400px;
+    width: 600px;
+    background-color: antiquewhite;
+    float: left;
+}
+#sidebar{
+    height: 400px;
+    background-color: rgb(173, 173, 0);
+    width: 400px;
+   float: left;
+}
+#footer{
+    height: 100px;
+    background-color: rgb(192, 131, 41);
+    clear: both;
+}
+                        </style>
+</head>
+
+<body>
+    <div id="main">
+       
+        <div id="header">
+header
+<h1>Breaking Bad Web Page</h1>
+
+
+        </div>
+    <div id="nav">
+navigation
+
+    </div>
+        <div id="content">
+content
+        </div>
+    <div id="sidebar">
+sidebar
+    </div>
+        <div id="footer">
+footer
+         </div>
+    </div>
+</body>
+</html>
