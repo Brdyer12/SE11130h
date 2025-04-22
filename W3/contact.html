@@ -1,48 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 3 Lab | Main Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
- <link rel="stylesheet" href= "css/styleBB.css">
-</head>
+    <head>
+        <title>Week 3 Lab | Contact</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styleBB.css">
 
-<body>
-    <div id="main">
-       
-        <div id="header">
-<h1>Breaking Bad Web Page</h1>
+<style>
+    table,thead,th,tr,td{
+border: 1px solid black;
+border-collapse: collapse;
 
+    }
+</style>
 
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <h1>Breaking Bad Fan Page</h1>
+                
+            </div>
+            <div id="nav">
+                <!--Navigation goes here -->
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="about.html" class="nav-btn">About</a>
+                <a href="images.html" class="nav-btn">Images</a>
+                <a href="credits.html" class="nav-btn">Credits</a>
+                <a href="#" class="nav-btn">Contact</a>
+            </div>
+            <div id="content">
+                <!-- Content goes here -->
+                 <h3>Contact the Breaking Bad Team</h3>
+                 <table>
+                    <thead>
+                        <tr>
+                            <td>Label</td>
+                            <td>Input</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- input for name -->
+                        <tr> 
+                            <td><label for="name">Name</label></td>
+                            <td><input type="text" name="name" placeholder="Enter name..." required></td>
+                        </tr>
+                            <tr>
+                        <td><label for="name">Email</label></td>
+                        <td><input type="email" name="email" placeholder="Enter email..." required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Phone</label></td>
+                        <td><input type="phone" name="phone" placeholder="Enter phone number..." required maxlength="10"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Message</label></td>
+                        <td><textarea type="message" id="message" name="message" cols="30" rows="10" placeholder="Enter message here..." required></textarea></td>
+                    </tr>
+<td></td>
+<td><input type="Submit" name="Submit" value="Submit"></td>
+
+                    </tbody>
+                 </table>
+                <h2 id="content-header">Contact</h2>
+                <img src="Images/Superlab1.webp" alt="Image of lab from Breaking Bad" width="600">
+                <p class="content-p">"Breaking Bad" follows Walter White, a chemistry teacher, who, after being diagnosed with terminal cancer, joins forces with his former student to produce and sell methamphetamine to secure his family's financial future. </p>
+            </div>
+            <div id="sidebar">
+                <h2>BB Links</h2>
+                <ul>
+                    <li><a href="https://www.imdb.com/title/tt0903747/" class="side-btn">Breaking Bad on IMDB</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Breaking_Bad" class="side-btn">Breaking Bad Wikipedia</a></li>
+                    <li><a href="https://www.breakingbadstore.com/" class="side-btn">Breaking Bad Store</a></li>
+                    <li><a href="http://www.savewalterwhite.com/" class="side-btn">Save Walter White</a></li>
+
+                </ul>
+            </div>
+            <div id="footer">
+                <p>&copy; 2025 HTML/JavaScript and Breaking Bad Fan Page</p>
+            </div>
         </div>
-    <div id="nav">
-<a href="index.html" class="nav-btn">Home</a>
-<a href="about.html" class="nav-btn">About</a>
-<a href="images.html" class="nav-btn">Images</a>
-<a href="credits.html" class="nav-btn">Credits</a>
-<a href="#" class="nav-btn">Contact</a>
-
-    </div>
-        <div id="content">
-            <h2>Contact</h2>
-<img src="../W3/Images/1-11-18-Sony-Breaking-Bad-2-2-1024x680.jpg" alt="Walter Lab" width="600">
-<p>Breaking Bad follows the transformation of Walter White, a high school chemistry teacher, from a meek man to a powerful drug lord after his cancer diagnosis, as he cooks and sells methamphetamine with his former student Jesse, leading to a descent into a world of crime and violence</p>
-        </div>
-    <div id="sidebar">
-
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Breaking_Bad#:~:text=13%20External%20links-,Premise,diagnosed%20with%20inoperable%20lung%20cancer." class="side-btn">BB Wikipedia</a></li>
-<li><a href="https://www.imdb.com/title/tt0903747/plotsummary/" class="side-btn">IMDB Rating</a></li>
-<li><a href="https://breakingbad.fandom.com/wiki/Breaking_Bad_(TV_series)" class="side-btn">BB Wiki</a></li>
-
-</ul>
-    </div>
-        <div id="footer">
-<p style="color: aliceblue;">&copy;2025 HTML/JavaScript</p>
-         </div>
-    </div>
-</body>
+    </body>
 </html>
