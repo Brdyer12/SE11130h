@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 | Collections and Loops</title>
+</head>
+<body>
+    <h1>Week 8 Collections and Loops</h1>
+
+    <p>Click Me</p>
+
+    <script>
+        var pTag = document.querySelector("p");
+    /*    var currentState = false;
+        // add an event listener
+
+        pTag.addEventListener("click", function(e){
+          
+            if (currentState === false);{
+            console.log("HI");
+            currentState = true;
+            pTag.innerHTML = "HI!"
+
+        }else{
+
+            console.log("BYE");
+            currentState = false;
+            pTag.innerHTML = "BYE!"
+        }
+
+        });
+*/
+//example using collections and states
+
+var currentState = 0;
+var states = [];//defines an array
+
+states [0] = function(){
+
+    console.log("HI");
+            currentState = 1;
+            pTag.innerHTML = "HI!"
+
+}
+
+states [1] = function(){
+
+    console.log("BYE");
+            currentState = 0;
+            pTag.innerHTML = "BYE!"
+
+
+}
+
+pTag.addEventListener("click", (e)=>{
+    states[currentState]();
+
+
+
+});
+// example of collections used to play rock paper scissors with a 2d array
+
+var choices = ["rock", "paper", "scissors"];
+//var playerChoice = Number(prompt(`What number do you pick?: \n0: Rock\n1: Paper\n2: Scissors`));
+var computerChoice = Math.floor(Math.random() * 2.9);
+
+var outcomes = [
+[`ties`, `loses`, `wins`],
+
+[`wins`, `ties`, `loses`],
+
+[`loses`, `wins`, `ties`]
+
+]
+
+//alert(` Player picked: ${choices[playerChoice]} and the Computer picked ${choices[computerChoice]}`);
+//alert(` Player ${outcomes[playerChoice][computerChoice]}`);
+
+var name = "Ben";
+
+name = name.toUpperCase();
+console.log(name);
+
+var subnet = `255.255.255.0`;
+var ip = `24.91.221.3`;
+
+var sbnOctets = subnet.split(`.`);
+var ipOctets = ip.split(`.`);
+
+function getParts(_sub, _ip, _netOrClient){
+var network = ``;
+
+if(_sub[0] === _netOrClient){
+network += ip[0] + ".";
+}
+if(_sub[1] === _netOrClient){
+network += ip[1] + ".";
+}
+if(_sub[2] === _netOrClient){
+network += ip[2] + ".";
+}
+if(_sub[3] === _netOrClient){
+network += ip[3] + ".";
+}
+
+return network.substring(0, network.length - 1);
+
+}
+
+var network = getParts(sbnOctets, ipOctets, `255`);
+var host = getParts(sbnOctets, ipOctets, `0`);
+
+console.log(`Network: ${network}`);
+console.log(`Host: ${host}`);
+
+
+var person = {
+    firstName:`ben`,
+     lastname: `dyer`,
+      Age: 19,
+       sayName: function(){
+    
+    return `Hi I am ${this.firstName} ${this.lastname}`
+    
+        }
+    }
+
+    console.log(person.sayName());
+    person.sayName();
+
+    for(var i = 0; i < person.firstName.length; i++){
+        console.log(person.firstName[i]);
+    
+    }
+
+    </script>
+
+
+</body>
+</html>
