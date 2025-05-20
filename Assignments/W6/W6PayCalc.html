@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="author" content="Ben Dyer">
+    <title>Week 6 | Pay Calculator</title>
+</head>
+<body>
+<script>
+
+let hourlyPay = Number(prompt("Enter your hourly pay:\n(Example: 14.50)", "14.50"));
+let hoursWorked = Number(prompt("Enter hours worked per week:\n(Example: 32)", "32"));
+let taxRate = Number(prompt("Enter tax rate as a percent:\n(Example: 20 for 20%)", "20")) / 100;
+
+
+let grossPay = hourlyPay * hoursWorked * 2;
+let taxAmount = grossPay * taxRate;
+let netPay = grossPay - taxAmount;
+
+
+console.log(`Gross Pay: $${grossPay.toFixed(2)}`);
+console.log(`Uncle Sam's Share: $${taxAmount.toFixed(2)}`);
+console.log(`Net Pay: $${netPay.toFixed(2)}`);
+
+
+alert(
+    `Gross Pay: $${grossPay.toFixed(2)}\n` +
+    `Uncle Sam's Share: $${taxAmount.toFixed(2)}\n` +
+    `Net Pay: $${netPay.toFixed(2)}`
+);
+</script>
+</body>
+</html>
